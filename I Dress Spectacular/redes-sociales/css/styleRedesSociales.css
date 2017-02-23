@@ -1,0 +1,92 @@
+/*!
+ * All Rights Reserved
+ * This software is proprietary information of
+ * Intelligent Sense
+ * Use is subject to license terms.
+ * Filename: stylesRedesSociales.css
+ */
+
+body{
+	width: 750px;
+	height: 420px;
+	border-color: #000;
+	border-style: solid;
+    border-width: medium;
+}
+
+header{
+	font-family: "Times New Roman";
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin: 25px;
+}
+
+main{
+	height: 310px;
+	padding: 20px 0;
+}
+
+div{
+	width: 200px;
+	height: 300px;
+	margin: 0 25px;
+	margin-bottom: 25px;
+	float: left;
+}
+
+p{
+	height: 200px;
+	margin: 7px;
+}
+
+img{
+	display: block;
+    margin: 0 auto;
+    width: 51px;
+	height: 51px;
+
+}
+
+.facebook{
+	font-family: "Comic Sans MS";
+	background-color: #0101DF;
+}
+
+#imgFacebook{
+	background: url('../img/social-media-icons-css-sprite.png') no-repeat -60px -62px;
+}
+
+#imgFacebook:hover{
+	background: url('../img/social-media-icons-css-sprite.png') no-repeat -60px -5px;
+}
+
+
+.twitter{
+	font-family: 'Open Sans Condensed', sans-serif;
+	background-color: #01A9DB;
+	margin: 0px 25px;
+}
+
+#imgTwitter{
+	background: url('../img/social-media-icons-css-sprite.png') no-repeat -3px -62px;
+}
+
+#imgTwitter:hover{
+	background: url('../img/social-media-icons-css-sprite.png') no-repeat -3px -5px;
+}
+
+.instagram{
+	font-family: "Calibri Light";
+	background-color: #8A4B08;
+
+}
+
+#imgInstagram{
+	background: url('../img/social-media-icons-css-sprite.png') no-repeat -117px -62px;
+}
+
+#imgInstagram:hover{
+	background: url('../img/social-media-icons-css-sprite.png') no-repeat -117px -5px;
+}
+
