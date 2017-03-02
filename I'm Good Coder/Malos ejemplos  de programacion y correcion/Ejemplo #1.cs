@@ -3,6 +3,7 @@
 //En el siguiente ejemplo se pueden encontrar los siguientes puntos:
 //1. Falta de comentarios que describan la funcionalidad 
 //2. Nombres poco significativos que no describen lo que hacen
+//3. Código extra que no es utilizado
 
 using System.Xml;
 
@@ -80,10 +81,11 @@ namespace ProyectoD1
 //1. Comentarios significativos.
 //2. Nombres significativos de funciones que expresan exactamente lo que hacen.
 //3. Nombres significativos de Variables que expresan para lo que son.
+//4. Eliminación de código innecesario.
 
 //--Buenas practicas
-//4. Responsabilidad unica de la clase.
-//5. Funciones pequeñas y fáciles de entender.
+//5. Responsabilidad unica de la clase.
+//6. Funciones pequeñas y fáciles de entender.
 
 using System.Xml;
 

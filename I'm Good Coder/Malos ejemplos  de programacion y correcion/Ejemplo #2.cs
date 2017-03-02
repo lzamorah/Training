@@ -1,5 +1,6 @@
 //Mala forma de programacion
 
+
 using System;
 using System.Collections.Generic;
 
@@ -160,20 +161,21 @@ class PalabraClave : InterfazAlgoritmo
     
 }
 
-
+//----------------------------------------------------------------------------
 //Buena forma de programacion
+//
+//1. Metodos cortos y facil de entender
+//2. Cometarios significativos
+//3. Variables y funciones con nombres significativos
 
-//Cometarios
-//Variables y funciones con nombres significativos
-//Metodos cortos y facil de entender
 using System;
 using System.Collections.Generic;
 
 namespace ProyectoD1
 {
 
-//Clase encargafa de realizar la codificacion por palabra clave
-//Existe una palabra clave que se puee cambiar, es la utilizada para realizar el cambio
+//Clase encargada de realizar la codificación por palabra clave
+//Existe una palabra clave que se puede cambiar, es la utilizada para realizar el cambio
 class PalabraClave : InterfazAlgoritmo
 	{
 		private DateTime fechaCifrado { get; set; }
@@ -208,7 +210,7 @@ class PalabraClave : InterfazAlgoritmo
 
         //Se toma la palabra clave
         //Se cuenta con una lista con el alfabeto
-        //La palabra clave es la base para  obtener la codificacion
+        //La palabra clave es la base para  obtener la codificación
         //Segun la cantidad de letras que tenga esta
 		public string codificarPalabra(String palabra, string operacion)
 		{
@@ -240,22 +242,16 @@ class PalabraClave : InterfazAlgoritmo
 						if (operacion.Equals("sumar"))
 						{
 							valorCaracter = alfabeto.IndexOf(preCaracter) + alfabeto.IndexOf(preClave) + 2;
-
-						}
-						else
-						{
+						} else {
 							valorCaracter = alfabeto.IndexOf(preCaracter) - alfabeto.IndexOf(preClave);
-
 						}
 
 						if (valorCaracter > alfabeto.Count)
 						{
 							valorCaracter -= alfabeto.Count;
-
 						}
-						else if (valorCaracter < 0)
+						if (valorCaracter < 0)
 						{
-
 							valorCaracter += alfabeto.Count;
 						}
 						string preRespuesta = alfabeto[valorCaracter - 1];
@@ -276,7 +272,7 @@ class PalabraClave : InterfazAlgoritmo
 		}
 
 
-	
+
 		public string preCodificar(string operacion, string identificador)
 		{
 			

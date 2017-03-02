@@ -1,0 +1,107 @@
+/*!
+ * All Rights Reserved
+ * This software is proprietary information of
+ * Intelligent Sense
+ * Use is subject to license terms.
+ * Filename: stylesRedesSociales.css
+ */
+
+.container-fluid{
+	text-align: center;
+}
+
+header{
+	font-family: "Times New Roman";
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin: 25px;
+}
+
+.social{
+	width: 680px;
+	height: 600px;
+	margin: auto;
+}
+
+.redSocial{
+	margin-left: 20px;
+	text-align: justify;
+	padding: 5px;
+	width: 200px;
+	height: 300px;
+	float: left;
+}
+
+p{
+	height: 200px;
+	margin: 7px;
+}
+
+img{
+	display: block;
+    margin: 0 auto;
+    width: 51px;
+	height: 51px;
+
+}
+
+.socialImg{
+	background: url('../img/social-media-icons-css-sprite.png');
+}
+
+.facebook{
+	font-family: "Comic Sans MS";
+	background-color: #0101DF;
+}
+
+#imgFacebook{
+	background-position: -60px -62px;
+}
+
+#imgFacebook:hover{
+	background-position: -60px -5px;
+}
+
+.twitter{
+	font-family: 'Open Sans Condensed', sans-serif;
+	background-color: #01A9DB;
+}
+
+#imgTwitter{
+	background-position: -3px -62px;
+}
+
+#imgTwitter:hover{
+	background-position: -3px -5px;
+}
+
+.instagram{
+	font-family: "Calibri Light";
+	background-color: #8A4B08;
+}
+
+#imgInstagram{
+	background-position: -117px -62px;
+}
+
+#imgInstagram:hover{
+	background-position: -117px -5px;
+}
+
+@media (max-width: 1200px){
+	.facebook{
+ 		background-color: #27782d;
+ 		margin-left: 7em;
+ 	}
+
+ 	.twitter{
+ 		background-color: #f42929;
+ 		margin-left: 7em;
+ 	}
+
+ 	.instagram{
+ 		background-color: #782740;
+ 		margin-left: 7em;
+ 	}
+}
