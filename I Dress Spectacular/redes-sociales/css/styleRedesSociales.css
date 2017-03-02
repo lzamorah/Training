@@ -48,45 +48,45 @@ img{
 
 }
 
+.socialImg{
+	background: url('../img/social-media-icons-css-sprite.png');
+}
+
 .facebook{
 	font-family: "Comic Sans MS";
 	background-color: #0101DF;
 }
 
 #imgFacebook{
-	background: url('../img/social-media-icons-css-sprite.png') no-repeat -60px -62px;
+	background-position: -60px -62px;
 }
 
 #imgFacebook:hover{
-	background: url('../img/social-media-icons-css-sprite.png') no-repeat -60px -5px;
+	background-position: -60px -5px;
 }
-
 
 .twitter{
 	font-family: 'Open Sans Condensed', sans-serif;
 	background-color: #01A9DB;
-	margin: 0px 25px;
 }
 
 #imgTwitter{
-	background: url('../img/social-media-icons-css-sprite.png') no-repeat -3px -62px;
+	background-position: -3px -62px;
 }
 
 #imgTwitter:hover{
-	background: url('../img/social-media-icons-css-sprite.png') no-repeat -3px -5px;
+	background-position: -3px -5px;
 }
 
 .instagram{
 	font-family: "Calibri Light";
 	background-color: #8A4B08;
-
 }
 
 #imgInstagram{
-	background: url('../img/social-media-icons-css-sprite.png') no-repeat -117px -62px;
+	background-position: -117px -62px;
 }
 
 #imgInstagram:hover{
-	background: url('../img/social-media-icons-css-sprite.png') no-repeat -117px -5px;
+	background-position: -117px -5px;
 }
-
