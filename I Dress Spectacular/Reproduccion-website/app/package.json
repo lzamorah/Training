@@ -1,0 +1,19 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "hi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compass": "^0.1.1",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-compass": "^2.1.0",
+    "gulp-sass": "^3.1.0"
+  }
+}

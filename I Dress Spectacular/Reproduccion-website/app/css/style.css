@@ -1,0 +1,169 @@
+body {
+  background-image: url(../img/background.jpg);
+  color: #666666;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+@media only screen and (max-width: 760px) {
+  body .information {
+    width: 100%;
+    margin: 0;
+  }
+  body img {
+    width: 70%;
+    height: 70%;
+  }
+  body .btnContent {
+    float: right;
+    margin: 2% 5% 0 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body header {
+    height: 20em;
+  }
+  body .title {
+    height: 20%;
+    width: 100%;
+  }
+  body .menu {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 20%;
+    border: none;
+    width: 90%;
+  }
+  body ul a {
+    display: block;
+    padding-bottom: 10px;
+    margin-right: 0px;
+  }
+  body li {
+    width: 105%;
+    border-bottom: 1px solid #C8C8C8;
+    float: none;
+  }
+}
+@media only screen and (max-width: 540px) {
+  body .btnContent {
+    float: none;
+  }
+  body blockquote {
+    font-size: 12px;
+  }
+}
+
+h1, h3 {
+  color: #A01D1D;
+}
+
+.main-container {
+  margin: 0 5%;
+  line-height: 1.7em;
+}
+
+header {
+  margin-top: 3%;
+  height: 3em;
+}
+
+.title {
+  width: 30%;
+  height: 5em;
+  float: left;
+}
+
+.menu {
+  width: 550px;
+  position: absolute;
+  right: 4em;
+  border-top: 1px solid #C8C8C8;
+  border-bottom: 1px solid #C8C8C8;
+}
+
+li {
+  float: left;
+  list-style: none;
+}
+
+a {
+  color: #666666;
+}
+
+ul a {
+  display: block;
+  padding-bottom: 10px;
+  margin-right: 15px;
+  font-size: 17px;
+  text-decoration: none;
+}
+ul a:hover {
+  color: #A01D1D;
+}
+
+.information {
+  float: left;
+  width: 30%;
+}
+
+.centerInformation {
+  margin: 0 5%;
+}
+
+img {
+  background-color: white;
+  border: 1px solid #D6D6D6;
+  padding: .5em;
+  width: 100%;
+  height: 100%;
+}
+
+.btnContent {
+  background: #000000;
+  border-color: #000000;
+  border-radius: .25em;
+  color: white;
+  padding: .5em 1em .5em 1em;
+}
+.btnContent:hover {
+  background: #666666;
+  border-color: #666666;
+}
+
+blockquote {
+  background: #EDEDED;
+  padding: 3em;
+  color: #A01D1D;
+  font-weight: bold;
+  font-family: 'Arial';
+  font-size: 14px;
+  margin: 0;
+  border-color: #7A7171;
+}
+
+.articleSection, footer {
+  float: right;
+}
+
+footer {
+  margin-top: 2%;
+  height: 90px;
+  width: 100%;
+  background-color: #000000;
+}
+
+.leftFooter, .rightFotter {
+  float: left;
+  height: 90px;
+  text-align: center;
+  margin-top: 2.5%;
+  color: #ffffff;
+}
+
+.leftFooter {
+  width: 70%;
+}
+
+.rightFotter {
+  width: 30%;
+}

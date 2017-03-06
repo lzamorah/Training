@@ -1,0 +1,202 @@
+///*!
+//* All Rights Reserved
+//* This software is proprietary information of
+//* Intelligent Sense
+//* Use is subject to license terms.
+//* Filename: style.scss
+//*/
+
+
+$font-color:  #A01D1D;
+$letter-color: #666666;
+$background-image: url(../img/background.jpg);
+$background-footer: #000000;
+$letter-color-footer: #ffffff;
+$background-btn: #000000;
+
+body{
+	background-image: $background-image;
+	color: $letter-color;
+	font: {
+		family: 'Open Sans', sans-serif;
+		size: 16px;
+	}
+	
+
+	@media only screen and (max-width: 760px) {
+		.information {
+			width: 100%;
+			margin: 0;
+		}
+		img{
+			width: 70%;
+			height: 70%;
+		}
+		.btnContent{
+			float: right;
+			margin: 2% 5% 0 0;
+		}
+  	}
+	
+	@media only screen and (max-width: 600px) {
+		header{
+			height: 20em;
+		}
+		.title{
+			height: 20%;
+			width: 100%;
+		}
+		.menu{
+			position: absolute;
+			margin-top: 60px;
+			margin-left: 20%;
+			border: none;
+			width: 90%;
+		}
+		ul{
+			a{
+			    display: block;
+			    padding-bottom: 10px;
+			    margin-right: 0px;
+			}
+		}
+		li{
+			width: 105%;
+			border-bottom: 1px solid #C8C8C8;
+			float: none;
+		}
+  	}
+
+  	@media only screen and (max-width: 540px) {
+		.btnContent{
+			float: none;
+		}
+		blockquote{
+			font-size: 12px;
+		}
+
+	}
+}
+
+h1, h3{
+	color: $font-color;
+}
+
+.main-container{
+	margin: 0 5%;
+	line-height: 1.7em;
+}
+
+header{
+	margin-top:3%;
+	height: 3em;
+}
+
+.title{
+	width: 30%;
+	height: 5em;
+	float: left;
+}
+
+.menu{
+	width: 550px;
+	position: absolute;
+    right: 4em;
+    border-top: 1px solid #C8C8C8;
+    border-bottom: 1px solid #C8C8C8;
+	
+}
+
+li {
+	float: left;
+	list-style: none;
+}
+
+a{
+	color: $letter-color;
+}
+
+ul{
+	a{
+	    display: block;
+	    padding-bottom: 10px;
+	    margin-right: 15px;
+	    font-size: 17px;
+	    text-decoration: none;
+
+	    &:hover{
+		color: $font-color;
+		}	
+	}
+}
+
+.information{
+	float: left;
+	width: 30%;
+}
+
+.centerInformation{
+	margin: 0 5%;
+}
+
+img{
+	background-color: white;
+    border: 1px solid #D6D6D6;
+	padding: .5em;
+	width: 100%;
+	height: 100%;
+}
+
+.btnContent{
+	background: $background-btn;
+	border: {
+		color: $background-btn;
+		radius: .25em;
+	}
+	color: white;
+	padding: .5em 1em .5em 1em;
+	&:hover{
+		background: #666666;
+		border-color: #666666
+	}
+}
+
+blockquote{
+	background: #EDEDED;
+	padding: 3em;
+	color: $font-color;
+	font: {
+		weight:bold;
+		family: 'Arial';
+		size: 14px;
+	}
+	margin: 0;
+	border-color:#7A7171;
+}
+
+.articleSection, footer {
+	float: right;	
+}
+
+footer {
+	margin-top: 2%;
+    height: 90px;
+    width: 100%;
+    background-color: $background-footer;
+}
+
+.leftFooter, .rightFotter{
+	float: left;
+	height: 90px;
+	text-align: center;
+	margin-top: 2.5%;
+	color: $letter-color-footer;
+}
+
+.leftFooter{
+	width: 70%;
+}
+
+.rightFotter{
+	width: 30%;
+}
