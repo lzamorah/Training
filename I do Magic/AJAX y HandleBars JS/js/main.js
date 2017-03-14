@@ -3,7 +3,8 @@ $(function() {
 	var space   = $("#user-template-js").html();
 	var template = Handlebars.compile(space);
 
-	var users = json;
+	json.users.sort(sort_by("ReTweets",json.users, parseInt));
+	var users = json;//.users.sort(sort_by("ReTweets",json.users, parseInt));
 	var html = template(users);
     console.log(html);
 
@@ -27,3 +28,16 @@ $(function() {
 Handlebars.registerHelper("position", function(index) {
   	return index;
 });
+
+var sort_by = function(field, reverse, primer){
+
+   var key = primer ? 
+       function(x) {return primer(x[field])} : 
+       function(x) {return x[field]};
+
+   reverse = !reverse ? 1 : -1;
+
+   return function (a, b) {
+       return a = key(a), b = key(b), reverse * ((a > b) - (b > a));
+     } 
+}
