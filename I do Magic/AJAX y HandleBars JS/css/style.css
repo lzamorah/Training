@@ -20,7 +20,7 @@ body{
 	
 }
 
- .img-box, .profile-box{
+.img-box, .profile-box{
 	height: 130px;
 	padding: 10px;
 	background: #F3F3E3;
@@ -39,8 +39,8 @@ body{
 
 .number-position{
 	position: relative;
-    left: 107px;
-    top: -121px;
+	left: 107px;
+	top: -121px;
 }
 
 .profile-box {
@@ -53,9 +53,9 @@ body{
 
 .handle{
 	font-size: 11px;
-    position: relative;
-    top: 74%;
-    left: 102px;
+	position: relative;
+	top: 74%;
+	left: 102px;
 } 
 
 .function-button{

@@ -1,0 +1,36 @@
+<!--
+    All Rights Reserved
+    This software is proprietary information of
+    Intelligent Sense
+    Use is subject to license terms.
+    Filename: template.html
+-->
+
+<!-- handlebars -m template/template.html > js/template.js -->
+{{# each users}}
+
+	<div class="user-box">
+		<h3> {{Name}} </h3>
+		<div class="img-box">
+			<img class="user-image" src="{{Profile}}">
+				<h5 class="number-position">{{position @index}}</h5>
+			</img>
+					
+			<center>
+				<button id="btn-show-{{@index}}" class="function-button">Show</button>
+				<button id="btn-hide-{{@index}}" class="function-button hide-button" hidden>Hide</button>
+			</center>		 
+		</div>
+
+		<div id="profile-box{{@index}}" class="profile-box">
+			<div class="note">
+				<h6>Tweets: {{Tweets}}</h6>
+				<h6>Followers: {{Followers}}</h6>
+				<h6>Retweets: {{ReTweets}}</h6> 	
+			</div>
+
+			<a class="handle" href="https://twitter.com/" >[handle]</a>
+		</div>
+	</div>
+			
+{{/each}}

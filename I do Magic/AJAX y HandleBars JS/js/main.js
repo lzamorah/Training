@@ -7,14 +7,12 @@
 // 
 
 $(function() {
-	var space   = $("#user-template-js").html();
-	var template = Handlebars.compile(space);
+	var template = Handlebars.templates['template.html'];
 
 	// Order by ReTweets
-	json.users.sort(sort_by("ReTweets",json.users, parseInt));
+	json.users.sort(sortBy("ReTweets",json.users, parseInt));
 	var users = json;
 	var html = template(users);
-    console.log(html);
 
 	$("#ranking-container").append(html);
 
@@ -24,9 +22,15 @@ $(function() {
 	    var id = idProfile.split("-")[2];
 
 	    if (idProfile.slice(0, 8) === "btn-show") {
-	    	hide_show_box(id, "none","block","block");
+	    	$("#btn-show-" + id).css("display", "none");
+			$("#btn-hide-" + id).css("display", "block");
+			$("#profile-box" + id).css("display", "block");
+	    	// hideShowBox(id, "none","block","block");
 	    } else {
-	    	hide_show_box(id, "block","none","none");
+	    	$("#btn-show-" + id).css("display", "block");
+			$("#btn-hide-" + id).css("display", "none");
+			$("#profile-box" + id).css("display", "none");
+	    	// hideShowBox(id, "block","none","none");
 	    }
 	});
 });
@@ -35,14 +39,13 @@ Handlebars.registerHelper("position", function(index) {
   	return index;
 });
 
-function hide_show_box(id, btnShow, btnHide, profileBox){
-	$("#btn-show-" + id).css("display", btnShow);
-	$("#btn-hide-" + id).css("display", btnHide);
-	$("#profile-box" + id).css("display", profileBox);
-}
+// function hideShowBox(id, btnShow, btnHide, profileBox){
+// 	$("#btn-show-" + id).css("display", btnShow);
+// 	$("#btn-hide-" + id).css("display", btnHide);
+// 	$("#profile-box" + id).css("display", profileBox);
+// }
 
-var sort_by = function(field, reverse, primer){
-
+var sortBy = function(field, reverse, primer){
    var key = primer ? 
        function(x) {return primer(x[field])} : 
        function(x) {return x[field]};
