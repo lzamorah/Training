@@ -1,0 +1,68 @@
+<!--
+    All Rights Reserved
+    This software is proprietary information of
+    Intelligent Sense
+    Use is subject to license terms.
+    Filename: Handlebars.html
+-->
+
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Angular -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+	<script type="text/javascript" src="js/app.js"></script>
+
+
+	<title>Angular</title>
+	
+</head>
+<body>
+	
+	<div>
+		<h1> Ranking </h1>
+		<div class="main-container" ng-controller="namesCtrl">
+	    	<div class="menu-container">
+	            <table class="filter-table" ng-model="letter">
+	                <tr>
+	                    <td ng-click="letter= ''" class="search">All</td>
+	                    <td ng-click="letter= 'A'" class="search">A</td>
+	                    <td ng-click="letter= 'E'" class="search">E</td>
+	                    <td ng-click="letter= 'F'" class="search">F</td>
+	                    <td ng-click="letter= 'I'" class="search">I</td>
+	                    <td ng-click="letter= 'L'" class="search">L</td>
+	                    <td ng-click="letter= 'M'" class="search">M</td>
+	                    <td ng-click="letter= 'N'" class="search">N</td>
+	                    <td ng-click="letter= 'R'" class="search">R</td>
+	                    <td ng-click="letter= 'W'" class="search">W</td>
+	                </tr>
+	            </table>
+	        </div>
+
+		    <div class="user-box" ng-repeat="x in users | startsWithLetter: letter">
+		        
+		        <div lass="img-box">
+		            <img class="user-image" src="{{x.Profile}}"></img>
+		        </div>
+
+		        <div id="profile-box" class="box profile-box-{{x.id}}" >
+		            <div class="note">
+		            	<a> {{x.Name}} </a>
+		                <h6>Tweets: {{x.Tweets}}</h6>
+		                <h6>Followers: {{x.Followers}}</h6>
+		                <h6>Retweets: {{x.ReTweets}}</h6>     
+		            </div>
+
+		           
+		        </div>
+		    </div>
+		
+		</div>
+	
+	</div>
+</body>
+</html>

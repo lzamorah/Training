@@ -1,0 +1,81 @@
+/*
+    All Rights Reserved
+    This software is proprietary information of
+    Intelligent Sense
+    Use is subject to license terms.
+    Filename: style.css
+*/
+
+body{
+	background: #E7EEDB;
+	font-family: "Century Gothic";
+}
+
+.filter-table{
+	margin-left: 9%;
+}
+
+.search{
+	padding-left: 25px;
+}
+.user-box {
+	margin-top: 30px;
+	margin-left: 10%;
+	border-radius: 5px;
+	width: 300px;
+	height: 150px;
+	background: #F3F3E3;
+	padding: 10px;
+	clear: both;
+	
+}
+
+ .img-box, .profile-box{
+	height: 130px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.img-box{	
+	top:10px;
+	float: left;
+	border-radius: 5px;
+}
+
+
+.user-image{	
+	float: left;
+	margin-top: 10px;
+}
+
+.number-position{
+	position: relative;
+    left: 107px;
+    top: -121px;
+}
+
+.profile-box {
+	width: 70%;
+}
+
+.note{
+	margin-left: 20px;
+	float: left;
+}
+
+.handle{
+	font-size: 11px;
+    position: relative;
+    top: 74%;
+    left: 102px;
+} 
+
+.function-button{
+	position: relative;
+	top: -55px;
+	border-radius: 5px;
+}
+
+.hide-button, .profile-box{
+	display: none;
+}
