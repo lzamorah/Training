@@ -1,0 +1,194 @@
+ ///*!
+//* All Rights Reserved
+//* This software is proprietary information of
+//* Intelligent Sense
+//* Use is subject to license terms.
+//* Filename: _base.scss
+//*/
+
+body{
+	background-image: $background-image;
+	color: $gray;
+	font: {
+		family: 'Open Sans', sans-serif;
+		size: 16px;
+	}
+	
+
+	@media only screen and (max-width: 760px) {
+		.information {
+			width: 100%;
+			margin: 0;
+		}
+		.block-image{
+			width: 70%;
+			height: 70%;
+		}
+		.btnContent{
+			float: right;
+			margin: 2% 5% 0 0;
+		}
+  	}
+	
+	@media only screen and (max-width: 600px) {
+		.block-header{
+			height: 20em;
+		}
+		.title{
+			height: 20%;
+			width: 100%;
+		}
+		.menu{
+			position: absolute;
+			margin-top: 60px;
+			margin-left: 20%;
+			border: none;
+			width: 90%;
+		}
+		.block-menu{
+			.menu-letter{
+			    display: block;
+			    padding-bottom: 10px;
+			    margin-right: 0px;
+			}
+		}
+		.div-menu{
+			width: 105%;
+			border-bottom: 1px solid #C8C8C8;
+			float: none;
+		}
+  	}
+
+  	@media only screen and (max-width: 540px) {
+		.btnContent{
+			float: none;
+		}
+		.block-article{
+			font-size: 12px;
+		}
+
+	}
+}
+
+h1, h3{
+	color: $red;
+}
+
+.main-container{
+	margin: 0 5%;
+	line-height: 1.7em;
+}
+
+.block-header{
+	margin-top:3%;
+	height: 3em;
+}
+
+.title{
+	width: 30%;
+	height: 5em;
+	float: left;
+}
+
+.menu{
+	width: 550px;
+	position: absolute;
+    right: 4em;
+    border-top: 1px solid #C8C8C8;
+    border-bottom: 1px solid #C8C8C8;
+	
+}
+
+.div-menu {
+	float: left;
+	list-style: none;
+}
+
+.menu-letter{
+	color: $gray;
+}
+
+.block-menu{
+	.menu-letter{
+	    display: block;
+	    padding-bottom: 10px;
+	    margin-right: 15px;
+	    font-size: 17px;
+	    text-decoration: none;
+
+	    &:hover{
+		color: $red;
+		}	
+	}
+}
+
+.information{
+	float: left;
+	width: 30%;
+}
+
+.centerInformation{
+	margin: 0 5%;
+}
+
+.block-image{
+	background-color: $white;
+    border: 1px solid #D6D6D6;
+	padding: .5em;
+	width: 100%;
+	height: 100%;
+}
+
+.btnContent{
+	background: $black;
+	border: {
+		color: $black;
+		radius: .25em;
+	}
+	color: white;
+	padding: .5em 1em .5em 1em;
+	&:hover{
+		background: #666666;
+		border-color: #666666
+	}
+}
+
+.block-article{
+	background: #EDEDED;
+	padding: 3em;
+	color: $red;
+	font: {
+		weight:bold;
+		family: 'Arial';
+		size: 14px;
+	}
+	margin: 0;
+	border-color:#7A7171;
+}
+
+.articleSection, .footer-minimalism {
+	float: right;	
+}
+
+.footer-minimalism {
+	margin-top: 2%;
+    height: 90px;
+    width: 100%;
+    background-color: $black;
+}
+
+.leftFooter, .rightFotter{
+	float: left;
+	height: 90px;
+	text-align: center;
+	margin-top: 2.5%;
+	color: $white;
+}
+
+.leftFooter{
+	width: 70%;
+}
+
+.rightFotter{
+	width: 30%;
+}
